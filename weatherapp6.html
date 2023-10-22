@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Application</title>
+
+    <meta charset="UTF-8" />
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+      <div class="container">
+    <div class="card mx-auto" style="width: 60%;">
+      <div class="card-body">
+
+          <div class="container justify-content-center">
+     
+         
+              <form class="search-form" id="search-form">
+              <div class="row">
+                <div class="col-7">
+
+                  <input
+                    type="search"
+                    placeholder="🔍 Change City"
+                    autofocus="on"
+                    autocomplete="off"
+                    id="city-input"
+                    class="form-control shadow-sm"
+                    
+                  />
+                   
+
+
+
+                </div>
+                <div class="col-3">
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="form-control btn btn-primary shadow-sm"
+                    id="city-input"
+                
+                  />
+                  
+                  <input
+                  type="button"
+                  value="Current"
+                  class="form-control btn btn-secondary shadow-sm"
+                  id="current-button"                />
+                </div>
+              </div>  
+             
+            </form>
+          </div>  
+      <h1 class="city" id="city"> ⛅ Prague</h1>
+      <h2 class="date-time"></h2>
+      <h3> 
+          <span class="current-temp" id="temp">17</span>
+                        <span class="degrees">°C</span>
+        
+        <br />
+        <a href="#" id="celsius-link">°C</a> |
+        <a href="#" id="fahrenheit-link">°F</a>
+      </h3>
+      
+
+      <div class="row">
+        <div class="col-6">
+          
+            Partly Cloudy
+            <br />
+            <br />
+            <br />
+          
+        </div>
+
+        <div class="col-6">
+          Percipitation: 40%
+          <br />
+          Wind: 2km/h
+        </div>
+      </div>
+      
+        <div class="row">
+          <div class="col-md-2">Tue<br />⛅<br />20°</div>
+          <div class="col-md-2">Wed<br />🌧<br />22°</div>
+          <div class="col-md-2">Thu<br />⛅<br />21°</div>
+          <div class="col-md-2">Fri<br />🌦<br />18°</div>
+          <div class="col-md-2">Sat<br />⛅<br />20°</div>
+          <div class="col-md-2">Sun<br />🌧<br />18°</div>
+        </div>
+      </br>
+    </br>
+  
+        <div class="credit">Coded by <span class="bold">Annamaria Agocsova</span></credit>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
